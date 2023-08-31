@@ -1,12 +1,12 @@
 .containers {
-  min-height: 75vh;
+  min-height: 90vh;
   width: 100vw;
   max-width: 45rem;
   margin: 2rem auto;
   border-radius: 2rem;
   background-color: #14bdac;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   position: relative;
 }
 
@@ -33,6 +33,7 @@
 .btn-Reset {
   border: none;
   outline: none;
+  cursor: pointer;
   background-color: #e7e4cc;
   font-weight: 700;
   width: 4rem;
@@ -41,8 +42,36 @@
 }
 
 .game-grid {
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 2rem;
+}
+
+.game-cell { 
+  background: #14bdac;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 10rem;
+  border-bottom: 1rem solid #4d737d;
+}
+
+#cell-1,#cell-4,#cell-7{
+  border-right: 1rem solid #4d737d;
+}
+
+#cell-9 {
+  border: none;
+}
+
+#cell-7,#cell-8{
+  border: none;
+  border-right:  1rem solid #4d737d;
+}
+
+#cell-2,#cell-5{
+  border-right:  1rem solid #4d737d;
 }

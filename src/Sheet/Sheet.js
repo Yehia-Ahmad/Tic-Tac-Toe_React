@@ -3,7 +3,7 @@ import "./Sheet.css";
 
 const Sheet = () => {
   return (
-    <div class="containers">
+    <div className="containers">
       <div className="header">
         <h2>
           Tic <span className="tac">Tac</span> Toe
