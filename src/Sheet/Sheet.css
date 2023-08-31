@@ -6,7 +6,7 @@
   border-radius: 2rem;
   background-color: #14bdac;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   position: relative;
 }
 
@@ -30,6 +30,10 @@
   justify-content: space-between;
 }
 
+.Status {
+  font-weight: 600;
+}
+
 .btn-Reset {
   border: none;
   outline: none;
@@ -48,18 +52,27 @@
   grid-template-rows: repeat(3, 1fr);
 }
 
-.game-cell { 
+.game-cell {
   background: #14bdac;
+  color: #4d737d;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
   height: 10rem;
   width: 10rem;
   border-bottom: 1rem solid #4d737d;
 }
 
-#cell-1,#cell-4,#cell-7{
+.winner {
+  color: #ff0202;
+}
+
+#cell-1,
+#cell-4,
+#cell-7 {
   border-right: 1rem solid #4d737d;
 }
 
@@ -67,11 +80,13 @@
   border: none;
 }
 
-#cell-7,#cell-8{
+#cell-7,
+#cell-8 {
   border: none;
-  border-right:  1rem solid #4d737d;
+  border-right: 1rem solid #4d737d;
 }
 
-#cell-2,#cell-5{
-  border-right:  1rem solid #4d737d;
+#cell-2,
+#cell-5 {
+  border-right: 1rem solid #4d737d;
 }
