@@ -1,0 +1,48 @@
+.containers {
+  min-height: 75vh;
+  width: 100vw;
+  max-width: 45rem;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  background-color: #14bdac;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  height: 8rem;
+  margin-top: 1.5rem;
+}
+.header > h2 {
+  text-align: center;
+  color: #4d737d;
+}
+.header > h2 > span {
+  color: #e7e4cc;
+}
+
+.Statu-Action {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-Reset {
+  border: none;
+  outline: none;
+  background-color: #e7e4cc;
+  font-weight: 700;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
